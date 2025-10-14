@@ -1,0 +1,177 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be
+% included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the
+% 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+% Set applicant's personal data for header
+\name{Nathaniel Ketema}
+\address{102 NW 9th Street \linebreak Dakota State University
+\linebreak Madison SD 57042}
+\contacts{(720) 919-1100 \linebreak nathanielketema@gmail.com
+  \linebreak
+  \href{https://github.com/nathanielketema/}{\faGithub~GitHub} \hspace{.2em}
+\href{https://www.linkedin.com/in/nathanielketema}{\faLinkedin~LinkedIn}}
+
+\begin{document}
+
+% Print the header
+\makeheader
+
+% Print the content
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Madison, SD}{Dakota State University}{Fall
+    2023 -- Spring 2027}
+    \begin{itemize}
+      \item{
+          Bachelor of Science in Computer Science and Cyber
+          Operations, GPA: 3.96
+        }
+      \item{
+          Dean's List, Honors Program, DSU Presidential Champion scholarship
+        }
+      \item{
+          Coursework: Data Structures, Advanced Data Structure,
+          Parallel Computing, Networking, Object Oriented
+          Programming, Web Development, Software Security, Assembly
+          Language, Introduction to Cyber Security
+        }
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Research Experience}
+  \begin{cvsubsection}{Quantum Security Researcher}{Dakota State
+    University}{Summer 2024}
+    Multi-level Post Quantum Encryption for Images with Quantum
+    Fourier Transform
+    \begin{itemize}
+      \item Designed novel multi-level post quantum encryption
+        algorithm combining QFT, AES, and LWE cryptography, achieving
+        PSNR >40 dB and SSIM 0.95-0.98 while maintaining encryption
+        times under 2.4s for images
+      \item Published peer reviewed research in IEEE Xplore
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Technical Experience}
+  \begin{cvsubsection}{Projects}{}{}
+    \begin{itemize}
+      \item {\textbf{Zig Data Structures \& Algorithms Library}
+          \begin{itemize}
+            \item {
+                Implemented comprehensive educational library featuring
+                10 data structures and 12 algorithms in Zig;\newline designed
+                for systems programmers learning the language
+              }
+          \end{itemize}
+        }
+      \item {\textbf{Research Article Discussion Platform}
+          \begin{itemize}
+            \item{
+                Built collaborative web application enabling users to
+                discuss academic papers in real time chat rooms \newline
+                organized by DOI.
+              }
+            \item{
+                Implemented user authentication, WebSocket based
+                messaging, and DOI validation system in team of 4 developers
+              }
+          \end{itemize}
+        }
+      \item{\textbf{Lock Free Concurrent Data Structures}
+          \begin{itemize}
+            \item{
+                Implemented lock free queue and stack using atomic
+                operations, achieving 4x throughput improvement over
+                mutex based implementations under high contention (8+
+                threads)
+              }
+          \end{itemize}
+        }
+      \item{\textbf{Custom Memory Allocator}
+          \begin{itemize}
+            \item{
+                Built general purpose memory allocator with segregated free
+                lists, reducing fragmentation by 35\% compared to naive
+                implementations; benchmarked against C's
+                malloc showing comparable performance for
+                mixed workloads with 512KB+ total allocations
+              }
+          \end{itemize}
+        }
+      \item{\textbf{Open Source:} Contributor to Zig programming language }
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Work Experience}
+  \begin{cvsubsection}{STEM Academic Tutor}{Dakota State
+    University}{Fall 2024 -- Spring 2025}
+    \begin{itemize}
+      \item {
+          Mentored GrowStem scholarship recipients in mathematics and
+          programming fundamentals
+        }
+      \item {
+          Guided students through initial phases of undergraduate
+          research project development
+        }
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Leadership:} Vice President, English Club; Honors
+        Student Advisory Council
+      \item \textbf{Public Speaking:} Multiple Best Delegate awards, Model
+        United Nations competitions
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item {\textbf{Languages:}
+          C (expert), Zig (expert), Python (proficient), SQL (proficient),
+          Java (intermediate), \newline C\# (intermediate), C++ (prior
+          experience)
+        }
+      \item {\textbf{Technologies:}
+          Linux, Vim, Git, Spring Boot, SQLite, PostgreSQL
+        }
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}
