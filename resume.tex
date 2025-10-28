@@ -119,11 +119,13 @@
       \item{\textbf{Custom Memory Allocator}
           \begin{itemize}
             \item{
-                Built general purpose memory allocator with segregated free
-                lists, reducing fragmentation by 35\% compared to naive
-                implementations; benchmarked against C's
-                malloc showing comparable performance for
-                mixed workloads with 512KB+ total allocations
+                Built custom memory allocator with segregated free
+                lists targeting small uniform allocations,
+                reducing fragmentation by 35\% compared to naive
+                implementations; achieved 2.3x speedup over
+                glibc malloc for game-like workloads while
+                maintaining comparable performance for mixed
+                workloads with 512KB+ allocations.
               }
           \end{itemize}
         }
