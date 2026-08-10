@@ -12,113 +12,136 @@
 \href{https://www.linkedin.com/in/nathanielketema}{\faLinkedin~LinkedIn}}
 
 \begin{document}
-
 \makeheader
-
-\begin{cvsection}{Education}
-  \begin{cvsubsection}{Madison, SD}{Dakota State University}{Fall
-    2023 -- Spring 2027}
-    \begin{itemize}
-      \item{
-          Bachelor of Science in Computer Science and Cyber
-          Operations, GPA: 3.96
-        }
-      \item{
-          Dean's List, Honors Program, DSU Presidential Champion scholarship
-        }
-      \item{
-          Coursework: Data Structures,
-          Parallel Computing, Networking, Object Oriented Programming,
-          Software Security, Assembly Language, Software
-          Exploitation, Applications of Deep Learning
-        }
-    \end{itemize}
-  \end{cvsubsection}
+\begin{cvsection}
+    {Education}
+    \begin{cvsubsection}
+        {Madison, SD}
+        {Dakota State University}
+        {Fall 2023 -- Spring 2027}
+        \begin{itemize}
+            \item{
+                    Bachelor of Science in Computer Science and Cyber
+                    Operations, GPA: 3.96
+                }
+            \item{
+                    Dean's List, Honors Program, DSU Presidential
+                    Champion scholarship, Kappa Sigma Iota Honor Society
+                }
+        \end{itemize}
+    \end{cvsubsection}
 \end{cvsection}
 
-\begin{cvsection}{Research Experience}
-  \begin{cvsubsection}{Quantum Security Researcher}{Dakota State
-    University}{Summer 2024}
-    Multi-level Post Quantum Encryption for Images with Quantum
-    Fourier Transform
-    \begin{itemize}
-      \item Designed novel multi-level post quantum encryption
-        algorithm combining QFT, AES, and LWE cryptography, achieving
-        PSNR >40 dB and SSIM 0.95-0.98 while maintaining encryption
-        times under 2.4s for images
-      \item Published peer reviewed research in IEEE Xplore
-    \end{itemize}
-  \end{cvsubsection}
-  \begin{cvsubsection}{Quantum AI Researcher}{Dakota State
-    University}{Spring 2026}
-    A Novel Hybrid Quantum-Classical Path Optimization for Methane
-    Detection Using Remote Quantum Intensity Prediction Models
-    \begin{itemize}
-      \item Built physics-aware hybrid quantum-classical UAV methane
-        detection framework using RAMS/HYSPLIT plume simulations,
-        environmental feature engineering, and PCA-based QIF
-      \item Published in IEEE Access. Demonstrated
-        about 50\% lower energy use than classical grid-routing
-        baselines while maintaining 21 target coverage.
-    \end{itemize}
-  \end{cvsubsection}
+\begin{cvsection}
+    {Work Experience}
+    \begin{cvsubsection}
+        {Quantum Security Researcher}
+        {Dakota State University}
+        {Summer 2024 - Spring 2025}
+        \textit{Published paper}: Multilevel Post Quantum Encryption for
+        Images with Quantum Fourier Transform (IEEE eIT)
+        \begin{itemize}
+            \item{
+                    Designed a novel multilevel post-quantum
+                    image encryption framework (QFT + AES + LWE),
+                    securing images against quantum attacks while
+                    preserving >40 dB PSNR / 0.95+ SSIM quality while
+                    maintaining encryption times under 2.4s for
+                    medical, defense, and financial images.
+                }
+        \end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}
+        {Quantum AI Researcher}
+        {Dakota State University}
+        {Fall 2026}
+        \textit{Published paper}: A Novel Hybrid Quantum-Classical Path
+        Optimization for Methane Detection Using Remote Quantum
+        Intensity Prediction Models (IEEE Access)
+        \begin{itemize}
+            \item{
+                    Co-authored, with Savannah River National
+                    Laboratory, a hybrid quantum-classical drone
+                    routing system (CatBoost + QAOA) built on
+                    SRNL provided RAMS/HYSPLIT dataset, cutting
+                    methane leak detection energy use by 50\% versus
+                    classical baselines.
+                }
+            \item{
+                    Implemented a custom Quantum Gaussian
+                    Process Regression model (QGPR) in Python, achieving a
+                    20.67\% $R^2$ improvement over classical GPR.
+                }
+        \end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}
+        {STEM Academic Tutor}
+        {Dakota State University}
+        {Fall 2024 -- Spring 2025}
+        \begin{itemize}
+            \item {
+                    Mentored GrowStem scholarship recipients in mathematics and
+                    programming fundamentals
+                }
+            \item {
+                    Guided students through initial phases of undergraduate
+                    research project development
+                }
+        \end{itemize}
+    \end{cvsubsection}
 \end{cvsection}
 
-\begin{cvsection}{Technical Experience}
-  \begin{cvsubsection}{Projects}{}{}
-    \begin{itemize}
-      \item {\textbf{Zig Data Structures \& Algorithms Library:}
-          Implemented 10 data structures and 12 algorithms for systems
-          programmers learning Zig}
-      \item {\textbf{Neural Network Library in Zig:}
-          Built configurable neural networks with matrix operations,
-          random weight initialization, and ReLU/sigmoid activations}
-      \item {\textbf{Quantum Gaussian Process Regression in Python:}
-          Compared quantum and classical GPR for methane leak
-          concentration prediction with tests and visual outputs}
-      \item {\textbf{Monte Carlo Drug Simulation in C:}
-          Used OpenMP to model drug addiction spread across
-          peer-influenced populations}
-      \item {\textbf{Tracedog:}
-          Built TypeScript causal intelligence platform for
-          OpenTelemetry trace analysis and LLM-narrated root-cause reports}
-      \item {\textbf{Research Article Discussion Platform in Python:}
-          Built DOI-organized real-time chat rooms for academic paper
-          discussion}
-    \end{itemize}
-  \end{cvsubsection}
+\begin{cvsection}
+    {Technical Experience}
+    \begin{cvsubsection}
+        {Projects}
+        {}
+        {}
+        \begin{itemize}
+            \item {\textbf{Shellu:}
+                    Built a POSIX compatible shell from scratch in
+                    Zig, implementing pipes, I/O redirection,
+                    background job control, command history, and tab
+                    completion alongside a full builtin command set,
+                    to gain deeper understanding of shell process
+                    management and low level systems programming.
+                }
+                % \item {\textbf{Copilot, you need a name for this one:} }
+            \item {\textbf{Tracedog:}
+                    Built a TypeScript program that ingests
+                    OpenTelemetry traces and uses LLM narrated causal
+                    analysis to autogenerate root cause reports,
+                    cutting the manual correlation work engineers do
+                    during incident response.
+                }
+            \item {\textbf{ZNN:}
+                    A neural network library implemented from scratch
+                    in Zig. It includes forward propagation,
+                    backpropagation, and gradient descent, to build a
+                    first principles understanding of how training
+                    actually works under the hood.
+                }
+        \end{itemize}
+    \end{cvsubsection}
 \end{cvsection}
 
-\begin{cvsection}{Work Experience}
-  \begin{cvsubsection}{STEM Academic Tutor}{Dakota State
-    University}{Fall 2024 -- Spring 2025}
-    \begin{itemize}
-      \item {
-          Mentored GrowStem scholarship recipients in mathematics and
-          programming fundamentals
-        }
-      \item {
-          Guided students through initial phases of undergraduate
-          research project development
-        }
-    \end{itemize}
-  \end{cvsubsection}
-\end{cvsection}
-
-\begin{cvsection}{Languages and Technologies}
-  \begin{cvsubsection}{}{}{}
-    \begin{itemize}
-      \item {\textbf{Languages:}
-          Zig (proficient), C (proficient), Python (proficient), SQL (proficient),
-          JavaScript (proficient), \newline
-          TypeScript (proficient), Java (intermediate),  C\#
-          (intermediate), C++ (prior experience)
-        }
-      \item {\textbf{Technologies:}
-          Linux, Vim, Git, SQLite, PostgreSQL, OpenMP
-        }
-    \end{itemize}
-  \end{cvsubsection}
+\begin{cvsection}
+    {Languages and Technologies}
+    \begin{cvsubsection}
+        {}
+        {}
+        {}
+        \begin{itemize}
+            \item {\textbf{Languages:}
+                    Zig, C, C++, Python, SQL, JavaScript, TypeScript,
+                    Java, C\#, HTML, CSS
+                }
+            \item {\textbf{Technologies:}
+                    Git, Github, Github Actions, SQLite, PostgreSQL,
+                    Svelte, SvelteKit, Docker, PyTorch, Qiskit
+                }
+        \end{itemize}
+    \end{cvsubsection}
 \end{cvsection}
 
 \end{document}
